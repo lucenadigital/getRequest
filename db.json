@@ -1,1 +1,12 @@
+{
+  fetch('https://public-api.wordpress.com/wpcom/v2/work-with-us', {
+        method: 'GET', //default
+        headers: {'X-future': 'automattician'}
+})
+.then(response => response.json())
+.then(data => {
+  console.log(data)
+})
+.catch(error => console.error(error))
 
+}
